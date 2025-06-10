@@ -1,0 +1,39 @@
+curl -X POST -H "Authorization: key=AAAAME_5tzA:APA91bEaFJ13Z9mP9ZIl1m7I2RqhzeyNFp9BZ3dRR3P2Ckz-7FT61xekAYLDFz7FVpZdvi0YMQfetVZCgcEqRagCk0nIXlsJ_1T376OLtIkyF4Ix_PigbZWtVuhSPyazl3ExfcWQvlH_" -H "Content-Type: application/json" -d '{
+  "to":"eTklVYTXTBm9j_B_up-chr:APA91bHYxC5VjCD7yX-DVd0xvaD9wgisGhd-a7DpBDjGgrr2GvfgHDaBQQKbeRKoQVwfslvq-GTdd1xY5ul3QtB9apNbxAduSQ3QwkFFgnwJYFr_KMBRDNsMnEcl_u2ZXiZNsL5pI_G0",
+  "notification": {
+    "title": "FCM Message",
+    "body": "This is a message from FCM"
+  }
+}' "https://fcm.googleapis.com/fcm/send"
+
+
+
+
+curl -X POST -H "Authorization: Bearer eTklVYTXTBm9j_B_up-chr:APA91bHYxC5VjCD7yX-DVd0xvaD9wgisGhd-a7DpBDjGgrr2GvfgHDaBQQKbeRKoQVwfslvq-GTdd1xY5ul3QtB9apNbxAduSQ3QwkFFgnwJYFr_KMBRDNsMnEcl_u2ZXiZNsL5pI_G0" -H "Content-Type: application/json" -d '{
+  "message": {
+    "token": "BBJDU7G9eUy_tOljyYDrbya0LXqe_afYI71gJYN7d9Y0cMGqn_YqaNrmp6IjuDJM86nVpBdDRbsTZ7u_5F31JNI"
+    "notification": {
+      "title": "FCM Message",
+      "body": "This is a message from FCM"
+    },
+    "webpush": {
+      "headers": {
+        "Urgency": "high"
+      },
+      "notification": {
+        "body": "This is a message from FCM to web",
+        "requireInteraction": "true",
+        "badge": "/badge-icon.png"
+      }
+    }
+  }
+}' "https://fcm.googleapis.com/v1/projects/buchatx/messages:send"
+
+
+
+
+
+curl -X POST --header "Authorization: key=AAAAME_5tzA:APA91bEaFJ13Z9mP9ZIl1m7I2RqhzeyNFp9BZ3dRR3P2Ckz-7FT61xekAYLDFz7FVpZdvi0YMQfetVZCgcEqRagCk0nIXlsJ_1T376OLtIkyF4Ix_PigbZWtVuhSPyazl3ExfcWQvlH_" \
+    --Header "Content-Type: application/json" 
+    https://fcm.googleapis.com/fcm/send \
+    -d "{\"to\":\"BBJDU7G9eUy_tOljyYDrbya0LXqe_afYI71gJYN7d9Y0cMGqn_YqaNrmp6IjuDJM86nVpBdDRbsTZ7u_5F31JNI\",\"notification\":{\"title\":\"Hello\",\"body\":\"Yellow\"}}"

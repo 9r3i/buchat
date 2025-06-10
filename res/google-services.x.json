@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "207500195632",
+    "firebase_url": "https://buchatx-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "buchatx",
+    "storage_bucket": "buchatx.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207500195632:android:7bf83006b6d69d4439faf5",
+        "android_client_info": {
+          "package_name": "al.anshary.buchatx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "207500195632-geekj0e9chceibi429urtq4dn2n8cff5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWHkTSQyI69bb6IHYO-OY92mXvZSiFXtE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "207500195632-geekj0e9chceibi429urtq4dn2n8cff5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
